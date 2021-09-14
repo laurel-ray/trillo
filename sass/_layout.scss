@@ -43,6 +43,7 @@
 
 .detail {
     display: flex;
+    font-size: 1.4rem;
     padding: 4.5rem;
     background-color: var(--color-grey-light1);
     border-bottom: var(--line);
@@ -59,6 +60,6 @@
 }
 
 .user-reviews {
-    background-color: yellowgreen;
+    background-color: var(--color-grey-light1);
     flex: 1;
 }
