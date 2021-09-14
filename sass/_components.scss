@@ -319,14 +319,22 @@
     color: var(--color-primary);
     font-size: inherit;
     border-bottom: 1px solid currentColor;
-    padding: 2px;
+    padding-bottom: 2px;
     display: inline-block;
     background-color: transparent;
     cursor: pointer;
-    transition: .2s;
+    transition: all .2s;
+
+    
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
 
     &:hover {
         color: var(--color-grey-dark1);
+        span {margin-left: 8px;
+        }
     }
 
     &:focus {
@@ -377,7 +385,7 @@
 
     &__item {
         flex: 0 0 50%;
-        margin: .7rem;
+        margin-bottom: .7rem;
     }
 
     &__item::before {
